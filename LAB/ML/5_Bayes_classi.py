@@ -61,8 +61,8 @@ for i in range(test_rows):
                 c1 += 1
             elif test[i, j] == train[k, j] and train[k, -1] == 'no':
                 c0 += 1
-        p0[j] = c0/probNo
-        p1[j] = c1/probYes
+        p0[j] = c0/countNo
+        p1[j] = c1/countYes
     p02 = probNo
     p12 = probYes
     for q in range(cols-1):
